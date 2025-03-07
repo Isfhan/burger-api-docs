@@ -43,8 +43,8 @@ export default function Home() {
       {/* Header and navigation */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
-          <div className="flex gap-2 items-center text-xl font-bold">
-            <span className="text-2xl">🍔</span>
+          <div className="flex gap-1 items-center text-xl font-bold">
+            <span className="text-2xl mb-1">🍔</span>
             <span>BurgerAPI</span>
           </div>
           <div className="flex flex-1 items-center justify-end space-x-4">
@@ -85,9 +85,9 @@ export default function Home() {
       <main className="container py-10">
         {/* Hero section */}
         <section className="py-12 md:py-16 lg:py-20 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4">
-            <span>🍔</span>
-            {meta.hero.title}
+          <h1 className="flex items-center justify-center text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4">
+            <span className="mb-2 text-4xl md:text-5xl lg:text-6xl">🍔</span>
+            <span>{meta.hero.title}</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             {meta.hero.description}
