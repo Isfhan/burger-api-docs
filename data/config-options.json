@@ -1,0 +1,26 @@
+[
+  {
+    "name": "title",
+    "description": "The title of your API (used in OpenAPI docs)"
+  },
+  {
+    "name": "description",
+    "description": "A description of your API (used in OpenAPI docs)"
+  },
+  {
+    "name": "apiDir",
+    "description": "The directory where your API routes are located"
+  },
+  {
+    "name": "globalMiddleware",
+    "description": "An array of middleware functions to apply to all routes"
+  },
+  {
+    "name": "version",
+    "description": "The version of your API (used in OpenAPI docs)"
+  },
+  {
+    "name": "debug",
+    "description": "Enable debug mode for detailed logging and interactive stack trace page"
+  }
+]

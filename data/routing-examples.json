@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Static Routes",
+    "path": "api/users/route.ts",
+    "result": "/api/users"
+  },
+  {
+    "title": "Dynamic Routes",
+    "path": "api/users/[id]/route.ts",
+    "result": "/api/users/:id"
+  },
+  {
+    "title": "Grouped Routes",
+    "path": "api/(public)/users/route.ts",
+    "result": "/api/users"
+  }
+]

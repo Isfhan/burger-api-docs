@@ -1,0 +1,82 @@
+{
+  "title": "burger-api - Modern Bun.js API Framework",
+  "description": "A modern, open source API framework built on Bun.js with file-based routing, middleware support, Zod validation, and automatic OpenAPI generation.",
+  "hero": {
+    "title": "BurgerAPI",
+    "description": "A modern, open source API framework built on Bun.js with file-based routing, middleware support, Zod validation, and automatic OpenAPI generation.",
+    "badges": [
+      {
+        "text": "Under Development",
+        "icon": "Package",
+        "color": "danger"
+      },
+      {
+        "text": "MIT License",
+        "icon": "FileCode",
+        "color": "success"
+      },
+      {
+        "text": "Bun 1.2.4+",
+        "icon": "bun",
+        "color": "black"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "View on GitHub",
+        "icon": "GitHub",
+        "variant": "outline",
+        "href": "https://github.com/isfhan/burger-api"
+      }
+    ]
+  },
+  "navigation": [
+    {
+      "text": "Features",
+      "href": "#features"
+    },
+    {
+      "text": "Installation",
+      "href": "#installation"
+    },
+    {
+      "text": "Usage",
+      "href": "#usage"
+    },
+    {
+      "text": "Examples",
+      "href": "#examples"
+    }
+  ],
+  "comingSoon": {
+    "title": "Simple Page Serving (Coming Soon!)",
+    "features": [
+      "Optional page serving capability for simple views",
+      "Perfect for API documentation, admin panels, or simple dashboards",
+      "Not meant to replace full-stack frameworks like Next.js",
+      "For complex frontend applications, we recommend using dedicated frontend frameworks"
+    ]
+  },
+  "installation": {
+    "command": "bun add burger-api",
+    "requirements": [
+      "Bun 1.2.4 or higher",
+      "TypeScript 5.0 or higher (recommended for type safety)"
+    ]
+  },
+  "documentation": {
+    "openapi": {
+      "title": "OpenAPI JSON",
+      "url": "http://localhost:4000/openapi.json",
+      "description": "This endpoint provides a complete OpenAPI 3.0 specification of your API, including all routes, parameters, request bodies, and responses. You can use this JSON file with any OpenAPI-compatible tool."
+    },
+    "swagger": {
+      "title": "Swagger UI",
+      "url": "http://localhost:4000/docs",
+      "description": "The Swagger UI provides an interactive interface for exploring and testing your API. You can see all available endpoints, try them out with different parameters, and view the responses directly in your browser."
+    }
+  },
+  "footer": {
+    "text": "Built with ❤️ for the Bun.js community."
+  }
+}

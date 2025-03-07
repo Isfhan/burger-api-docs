@@ -1,0 +1,23 @@
+[
+  {
+    "question": "How do I add custom middleware?",
+    "answer": "You can pass an array of global middleware in the Burger options or export route-specific middleware in your route files.",
+    "code": "// Global middleware (in your main file)\nconst burger = new Burger({\n  // ...other options\n  globalMiddleware: [logger, authMiddleware, corsMiddleware],\n});\n\n// Route-specific middleware (in your route file)\nexport const middleware = [validateProductAccess, rateLimit];"
+  },
+  {
+    "question": "How does file-based routing work?",
+    "answer": "Place your route files under src/api/ or just /api using folder and file naming conventions.",
+    "hasExamples": true
+  },
+  {
+    "question": "How is validation handled?",
+    "answer": "burger-api uses Zod for schema validation. Define your schemas in your route files and they are automatically used to validate incoming requests.",
+    "code": "// In your route file\nexport const schema = {\n  get: {\n    params: z.object({\n      id: z.preprocess(\n        (val) => (typeof val === \"string\" ? parseInt(val, 10) : val),\n        z.number().min(1, \"ID is required\")\n      ),\n    }),\n    query: z.object({\n      search: z.string().optional(),\n    }),\n  },\n  post: {\n    body: z.object({\n      name: z.string().min(1, \"Name is required\"),\n      price: z.number().positive(\"Price must be positive\"),\n    }),\n  },\n};",
+    "additionalInfo": "When a request is received, burger-api automatically validates it against the appropriate schema and makes the validated data available in req.validated."
+  },
+  {
+    "question": "How can I customize the OpenAPI documentation?",
+    "answer": "Override the default auto-generated summaries, descriptions, tags, and operationIds by exporting an openapi object in your route files.",
+    "code": "// In your route file\nexport const openapi = {\n  get: {\n    summary: \"Get Product Details\",\n    description: \"Retrieves product details by product ID.\",\n    tags: [\"Product\"],\n    operationId: \"getProductDetails\",\n    deprecated: false,\n    externalDocs: {\n      description: \"Product API Documentation\",\n      url: \"https://example.com/docs/products\",\n    },\n  },\n};"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "🎯",
+    "title": "Clear separation of concerns",
+    "description": "Each part of your application has its own dedicated location"
+  },
+  {
+    "icon": "📁",
+    "title": "Easy to find and maintain code",
+    "description": "Logical organization makes navigation intuitive"
+  },
+  {
+    "icon": "🔄",
+    "title": "Reusable components",
+    "description": "Middleware and schemas can be shared across routes"
+  },
+  {
+    "icon": "📚",
+    "title": "Better scalability",
+    "description": "Structure grows naturally as your API expands"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "performance",
+    "icon": "Zap",
+    "title": "Bun-Native Performance",
+    "description": "Leverages Bun's high-performance HTTP server for blazing-fast API responses. Built on Bun's native APIs to deliver exceptional speed and efficiency."
+  },
+  {
+    "id": "routing",
+    "icon": "Folder",
+    "title": "File-Based Routing",
+    "description": "Automatically registers API routes from your file structure using a clear naming convention. Supports dynamic routes via folder names like [id] for /api/product/:id."
+  },
+  {
+    "id": "middleware",
+    "icon": "Plus",
+    "title": "Middleware Architecture",
+    "description": "Supports both global and route-specific middleware with a familiar req, res, next pattern. Chain multiple middleware functions to process requests before they reach your route handlers."
+  },
+  {
+    "id": "validation",
+    "icon": "Check",
+    "title": "Type-Safe Validation",
+    "description": "Utilizes Zod for request validation, ensuring full type safety and automatic error reporting. Validates request params, query, and body with support for preprocessing (e.g., converting URL parameters from string to number)."
+  },
+  {
+    "id": "openapi",
+    "icon": "FileText",
+    "title": "Automatic OpenAPI Generation",
+    "description": "Generates a complete OpenAPI 3.0 specification directly from your routes and Zod schemas. Includes support for tags, summaries, descriptions, operationId, deprecated status, and externalDocs for comprehensive API documentation."
+  },
+  {
+    "id": "swagger",
+    "icon": "ArrowDown",
+    "title": "Swagger UI Integration",
+    "description": "Provides an out-of-the-box Swagger UI endpoint for interactive API documentation. Access your API documentation at /docs with a fully interactive interface for testing endpoints directly from the browser."
+  }
+]

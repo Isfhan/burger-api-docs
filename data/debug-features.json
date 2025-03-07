@@ -1,0 +1,6 @@
+[
+  "Interactive stack trace page when errors occur",
+  "Detailed error information with full stack traces",
+  "Highlighted code showing exactly where errors occurred",
+  "Request context and environment details for easier debugging"
+]
