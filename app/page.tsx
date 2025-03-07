@@ -5,6 +5,7 @@ import CodeBlock from "@/components/code-block";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getIcon } from "@/utils/icon-map";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 // Import JSON data
 import metaData from "@/data/meta.json";
@@ -75,6 +76,7 @@ export default function Home() {
                 {getIcon("GitBranch", "h-4 w-4")}
                 <span>GitHub</span>
               </Button>
+              <ThemeToggle />
             </nav>
           </div>
         </div>
