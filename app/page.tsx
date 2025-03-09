@@ -44,8 +44,8 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
           <div className="flex gap-1 items-center text-xl font-bold">
-            <span className="text-2xl mb-1">🍔</span>
-            <span>BurgerAPI</span>
+            <img src="/logo.png" alt="BurgerAPI" className="w-8 h-8" />
+            <span className="logo-text-nav">BurgerAPI</span>
           </div>
           <div className="flex flex-1 items-center justify-end space-x-4">
             <nav className="flex items-center space-x-4">
@@ -86,8 +86,14 @@ export default function Home() {
         {/* Hero section */}
         <section className="py-12 md:py-16 lg:py-20 text-center">
           <h1 className="flex items-center justify-center text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4">
-            <span className="mb-2 text-4xl md:text-5xl lg:text-6xl">🍔</span>
-            <span>{meta.hero.title}</span>
+            <img
+              src="/logo.png"
+              alt="BurgerAPI"
+              className="w-14 h-14 xs:w-16 xs:h-16 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
+            />
+            <span className="logo-text-hero">
+              {meta.hero.title}
+            </span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             {meta.hero.description}
@@ -429,9 +435,9 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t py-10 bg-muted/30">
         <div className="container flex flex-col md:flex-row justify-between items-center">
-          <div className="flex items-center gap-2 mb-4 md:mb-0">
-            <span className="text-xl">🍔</span>
-            <span className="font-semibold">BurgerAPI</span>
+          <div className="flex items-center gap-1 mb-4 md:mb-0">
+            <img src="/logo.png" alt="BurgerAPI" className="w-7 h-7" />
+            <span className="font-bold logo-text-footer">BurgerAPI</span>
           </div>
           <p className="text-sm text-muted-foreground">{meta.footer.text}</p>
         </div>

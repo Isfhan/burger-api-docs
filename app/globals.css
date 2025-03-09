@@ -10,10 +10,10 @@
     --card-foreground: 222 47% 11%;
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
-    --primary: 221 83% 53%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 199 89% 48%;
-    --secondary-foreground: 222 47% 11%;
+    --primary: 30 65% 75%; /* Even darker beige */
+    --primary-foreground: 25 55% 25%; /* #6c341c in HSL (Dark text on light background) */
+    --secondary: 25 55% 25%; /* #6c341c in HSL */
+    --secondary-foreground: 210 40% 98%; /* Light text on dark background */
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
     --accent: 142 71% 45%;
@@ -33,10 +33,10 @@
     --card-foreground: 0 0% 98%;
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 25 85% 55%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 35 90% 50%;
-    --secondary-foreground: 20 10% 10%;
+    --primary: 30 75% 90%; /* #fae2c6 in HSL */
+    --primary-foreground: 25 55% 25%; /* #6c341c in HSL (Dark text on light background) */
+    --secondary: 25 55% 25%; /* #6c341c in HSL */
+    --secondary-foreground: 210 40% 98%; /* Light text on dark background */
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 215 20.2% 65.1%;
     --accent: 120 50% 40%;
@@ -56,4 +56,19 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.logo-text-nav {
+  -webkit-text-stroke: 1px #6c341c;
+  color: #fae2c6;
+}
+
+.logo-text-hero {
+  -webkit-text-stroke: 1.5px #6c341c;
+  color: #fae2c6;
+}
+
+.logo-text-footer {
+  -webkit-text-stroke: 0.5px #6c341c;
+  color: #fae2c6;
 }
